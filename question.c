@@ -143,7 +143,7 @@ int main(){
     float intrest = amount - p;
     printf("Amount= %.2f and intrest=%.2f",amount,intrest);
     return 0;
-}//To print your own name
+}//9...To print your own name
 #include <stdio.h>
 int main(){
  char name[345];
@@ -154,4 +154,38 @@ int main(){
  scanf(" %[^\n]", name );
  printf("My name is %s",name);
  return 0;
+}//10.Sum of the complwx numbers
+#include <stdio.h>
+int main(){
+    int num_1,num_2 ,com_1,com_2;
+    printf("Enter the first complex number\n");
+    scanf("%d%d",&num_1,&com_1);
+    printf("Enter the second compplex number");
+    scanf("%d%d",&num_2,&com_2);
+    int c = num_1+num_2;
+    int d = com_1 +com_2;
+    printf("The sum of %d+%di\n and %d+%di\n",num_1,com_1,num_2,com_2);
+   if (d>0){
+    printf("Sum: %d + %di", c,d);
+   }
+   else{
+    printf("Sum: %d%di",c,d);
+   }
+  
+    return 0;
+}//11.. To check the entered character is vowel or conconent
+#include <stdio.h>
+int main(){
+    char ch;
+    printf("Enter the character");
+    scanf("%c", &ch);
+    if(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u'){
+        printf("The letter %c is vowel",ch);
+
+    }
+    else{
+        printf("The letter %d is consonent",ch);
+    }
+    return 0;
 }
+  
