@@ -1,7 +1,11 @@
 #include <stdio.h>
-    int main(){
-        char ch[65] = {'c','r','t'};
-        printf("%c",ch[1]);
-   
-    
+int main(){
+    int i,j;
+    int number[3][3] = {1,2,3,4,5,6,7,8,9};
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+        printf("(%d,%d)%d\t",i,j,number[i][j]);
+        }
+        printf("\n");
+    }
 }
