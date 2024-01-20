@@ -188,4 +188,49 @@ int main(){
     }
     return 0;
 }
-  
+ //12..Sum of 10 numbers
+#include <stdio.h>
+int main(){
+    int num,sum=0,i;
+    printf("Enter the number from where you want top start");
+    scanf("%d",&num);
+    for(i=num;i<num+10;i++){
+        sum+=i;
+    }
+    printf("The sum from %d to %d is %d",num,num+9,sum);
+    return 0;
+
+}
+//13... Display all the numbers between 1 to 1000 that are perfectly divisible by 10
+#include <stdio.h>
+int main(){
+    int i;
+    for(i=0;i<=1000;i++){
+        if(i%10==0){
+            printf("%d,",i);
+        }
+    }
+}
+//14..Dispaly all numbers btweeen 2000 to 100 that are perfectly divisible by 13 and 15 and 45
+  int main(){
+    int i;
+    for(i=2000;i>=100;i--){
+        if(i%13==0 && i%15==0 && i%17==0  && i%19==0){
+            printf("%d,",i);
+        }
+    }
+} 
+//15..WAP to find sum of all odd numbers between 1 to 100
+#include <stdio.h>
+int main(){
+   int i;
+     int sum =0;
+   for(i=0;i<=100;i++){
+    if(i%2==1){
+        sum+=i;
+        
+    }
+}
+printf("The sum of first 100 even number is %d\n",sum);
+   }
+   
