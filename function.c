@@ -62,4 +62,5 @@ int main(){
     love(n);
     love(n);
 }
-  
+
+//WAP to find sum of all odd numbers between 1 to 100
