@@ -1,3 +1,21 @@
 Compiler time=In computer science, compile time describes the time window during which a language's statements are converted into binary instructions for the processor to execute
 During compile time errors occur because of syntax and semantic. The syntax error occurs because of the wrong syntax of the written code. Semantic errors occur in reference to variable, function, type declarations and type checking.
 
+#include <stdio.h>
+#include <math.h>
+int main(){
+  int num,rem;
+ double sum=0;
+  printf("Enter the number you want to check\n");
+  scanf("%d",&num);
+  int num_1 = num;
+  while(num_1!=0){
+    rem=num_1%10;
+    sum+=rem;
+    num_1=num_1/10;
+  }
+  double root = pow(num,1.0/3);
+  if(sum==root){
+    printf("YEs");
+  }
+}
